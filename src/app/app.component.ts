@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Component, OnDestroy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from '../core/header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BrowserModule,
-    BrowserAnimationsModule],
+  imports: [RouterOutlet, HeaderComponent, DashboardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
